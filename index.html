@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-cajero.css">
+    <title>Cajero Automatico</title>
+    <script defer src="js/cajero.js"></script>
+</head>
+<body>
+    <main id="contenedor">
+        <!-- Panel de inicio -->
+        <section>
+            <div id="titulo">
+                <h1>CAJERO AUTOMATICO</h1>
+            </div><hr>
+            <div id="inicio" class="visible">
+                <!-- <button onclick="iniciar()" >Inicio</button> -->
+            <section id="primerMenu" class="visible">
+                <button onclick="login()">Iniciar Sesión</button>
+                <button onclick="nuevaCuenta()">Crear Cuenta</button>
+            </section>
+            <section id="segundoMenu" class="invisible">
+                <h3 id="bienvenida">Bienvenida. ..</h3>
+                <button onclick="consultaSaldo()">Consultar Saldo</button>
+                <button onclick="ingresarMonto()">Ingresar Monto</button>
+                <button onclick="retirandoMonto()">Retirar Monto</button>
+                <button onclick="iniciar()">Cerrar Sesión</button>
+            </section>
+            </div>
+        </section>
+
+        <section id="login" class="invisible">
+            <div id="caja-login">
+                <div id="botonUsuario">
+                    <label for="nombreUsuario">Usuario</label>
+                    <input id="nombreUsuario" type="text" placeholder="Usuario">
+                </div>
+                <br>
+                <div id="botonContra">
+                    <label for="laContra">Contraseña</label>
+                    <input id="laContra" type="password" placeholder="Contraseña">
+                </div>
+                <button onclick="ingresar()" type="button">Ingresar</button>
+                <button onclick="iniciar()">Volver</button>
+            </div>
+        </section>
+
+        <section id="consultaSaldo" class="invisible">
+                <div id="muestraSaldo">Saldo</div>
+                <button onclick="ingresar()">Volver</button>
+                <button onclick="iniciar()">Cerrar Sesión</button>
+        </section>
+
+        <section id="consultaSaldoIngresado" class="invisible">
+            <div id="muestraSaldoNuevo">Saldo</div>
+            <button onclick="ingresar()">Volver</button>
+            <button onclick="iniciar()">Cerrar Sesión</button>
+        </section>
+
+        <section id="consultaSaldoRetirado" class="invisible">
+            <div id="muestraSaldoRetirado">Saldo</div>
+            <button onclick="ingresar()">Volver</button>
+            <button onclick="iniciar()">Cerrar Sesión</button>
+        </section>
+
+        <section id="crearCuenta" class="invisible">
+            <div id="caja-crea-cuenta">
+                <div>
+                    <p>Crea tu usuario y contraseña.</p>
+                    <p>Su saldo incicial debe ser mayor a $10 y menor a $990, para empezar.</p>
+                </div>
+                <div id="paraUsuarioNuevo">
+                    <label for="floatingInput">Usuario</label>
+                    <input type="text" class="form-control" id="usuarioNuevo" placeholder="Usuario">
+                </div>
+                <br>
+                <div id="paraContraNueva">
+                    <label for="floatingPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="contraNueva" placeholder="Contraseña">
+                </div> <br>
+                <div id="paraSaldoNuevo">
+                    <label for="saldoNuevo">Saldo Inicial</label>
+                    <input type="text" class="form-control" id="saldoNuevo" placeholder="Monto (Sin el signo $)">
+                </div> 
+                <br><br>
+                <button onclick="guardar()">Guardar</button>
+                <button onclick="iniciar()">Canelar</button>
+            </div>
+        </section>
+
+      <section id="ingresandoMonto" class="invisible">
+            <div>
+                <p>Ingresa un monto, recuerda que no tienes que sobrepasar el límite de $990</p>
+            </div>
+            <div id="paraUsuarioNuevo">
+                <label for="floatingInput">Monto</label>
+                <input type="text" class="form-control" id="montoNuevo" placeholder="Monto">
+            </div>
+            <button onclick="guardaMontoNuevo()">Guardar</button>
+            <button onclick="ingresar()">Canelar</button>
+        </section>
+
+        <section id="retirandoMonto" class="invisible">
+            <div>
+                <p>Ingresa el monto que quieres retirar, la cuenta no debe de tener menos de $10.</p>
+            </div>
+            <div id="paraRetirarMonto">
+                <label for="floatingInput">Monto</label>
+                <input type="text" class="form-control" id="montoRetirado" placeholder="Monto">
+            </div>
+            <button onclick="montoRetirado()">Guardar</button>
+            <button onclick="ingresar()">Canelar</button>
+        </section>
+    </main>
+</body>
+</html>

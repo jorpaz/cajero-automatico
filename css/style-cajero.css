@@ -1,0 +1,106 @@
+body{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:aliceblue;
+}
+#contenedor {
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+#titulo {
+    background-color:rgb(124, 120, 120);
+    opacity: 80%;
+    padding: 7px;
+    text-align: center;
+    color:black;
+    font-size: large;
+}
+
+#inicio {
+    margin-top: 0px;
+    background-color:darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#primerMenu {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#segundoMenu {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#login {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 1px 7px;
+    text-align: center;
+    
+}
+
+#caja-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10%;
+}
+
+#crearCuenta {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 15px 4px;
+    text-align: center;
+}
+
+#consultaSaldo {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#consultaSaldoIngresado {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#consultaSaldoRetirado {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#ingresandoMonto {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}
+
+#retirandoMonto {
+    margin-top: 0px;
+    background-color: darkgray ;
+    padding: 50px 7px;
+    text-align: center;
+}

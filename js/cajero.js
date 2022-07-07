@@ -145,7 +145,7 @@ function consultaSaldoDesdeRetiro(){
 
     
     saldoInicial = parseInt(usuario.saldo);
-    document.getElementById('muestraSaldoRetirado').innerText = `Ingresaste $${valorRetirado}. Ahora el saldo de tu cuenta es: $${saldoInicial}.`;
+    document.getElementById('muestraSaldoRetirado').innerText = `Retiraste $${valorRetirado}. Ahora el saldo de tu cuenta es: $${saldoInicial}.`;
 };
 
 function ingresarMonto(){
